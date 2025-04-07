@@ -1,134 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200..800&display=swap");
 
 :root {
-    --accent-color: rgba(83, 186, 230, 0.466);
-    --background: linear-gradient(-45deg, #1e1e2e, #181825, #313244, #1e1e2e);
+  --accent-color: rgba(83, 186, 230, 0.466);
+  --background: linear-gradient(-45deg, #1e1e2e, #181825, #313244, #1e1e2e);
 
+  --theme: #c3e88d;
+  --main-color: #cfc9c2;
+  --theme-2: #c0caf5;
 
-    --theme: #c3e88d;
-    --main-color: #cfc9c2;
-    --theme-2: #c0caf5;
+  --peach: #fab387;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --red: #f38ba8;
 
-    --rosewater: #f5e0dc;
-    --flamingo: #f2cdcd;
-    --pink: #f5c2e7;
-    --mauve: #cba6f7;
-    --red: #f38ba8;
-    --maroon: #eba0ac;
-    --peach: #fab387;
-    --yellow: #f9e2af;
-    --green: #a6e3a1;
-    --teal: #94e2d5;
-    --sky: #89dceb;
-    --sapphire: #74c7ec;
-    --blue: #89b4fa;
-    --lavender: #b4befe;
-  
-    --text: #cdd6f4;
-    --subtext1: #bac2de;
-    --subtext0: #a6adc8;
-    --overlay2: #9399b2;
-    --overlay1: #7f849c;
-    --overlay0: #6c7086;
-  
-    --surface2: #585b70;
-    --surface1: #45475a;
-    --surface0: #313244;
-  
-    --base: #1e1e2e;
-    --mantle: #181825;
-    --crust: #11111b;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
-    min-height: 100vh;
-    font-family: Poppins;
-    width: 100%;
-    color: var(--text);
-    background: var(--background);
-    background-size: 800% 800%;
-    animation: gradient 15s ease infinite;
+  min-height: 100vh;
+  height: 100%;
+
+  font-family: Poppins;
+  color: var(--text);
+  background: var(--background);
+  background-size: 800% 800%;
+  animation: gradient 15s ease infinite;
 }
 
 nav {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .link-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 nav a {
-    margin: 0.5rem 2rem;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--text);
-    position: relative;
-    font-weight: bold;
+  margin: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+  font-weight: bold;
 }
 
-
 .link-container a::after {
-    content: "";
+  content: "";
 
-    position: absolute;
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    
-    width: 0%;
-    background-color: var(--teal);
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
 
-    transition: width 0.3s ease;
+  width: 0%;
+  background-color: var(--teal);
+
+  transition: width 0.3s ease;
 }
 
 .link-container a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 nav svg {
-    fill: var(--text);
+  fill: var(--text);
 }
 
 #sidebar-btn {
-    display: none;
+  display: none;
 }
 
-.sidebar-open, .sidebar-close {
-    padding: 0 20px;
-    display: none;
+.sidebar-open,
+.sidebar-close {
+  padding: 0 20px;
+  display: none;
 }
-
-
