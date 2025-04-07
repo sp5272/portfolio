@@ -1,0 +1,269 @@
+@media (max-width: 1065px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        margin-bottom: 35vh;
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 707px) {
+    h2 {
+        font-size: 2rem; 
+        font-weight: 600;
+        color: #ff9e64; 
+        margin-bottom: 30px;
+        text-align: left; 
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #7aa2f7; 
+        margin-bottom: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #ff757f;
+        text-align: left;
+    }
+
+    .tech-stack {
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .link-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        z-index: 10;
+        width: 60%;
+
+        box-shadow: -5px 0 5px black;
+
+        background: transparent;
+        backdrop-filter: blur(40px);
+
+        transition: 0.5s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        margin: 20px 30px;
+        justify-content: flex-end;
+    }
+
+    .sidebar-open, .sidebar-close {
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-btn:checked ~ .link-container {
+        right: 0;
+    }
+
+    #sidebar-btn:checked ~ .sidebar-open {
+        display: none;
+    }
+
+    #sidebar-btn:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 9;
+    }
+
+    .project:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+/* 
+
+@media (max-width: 80px) {
+    #link-container {
+        width: 70%;
+        display: none;
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: rgba(9, 9, 9, 0.099);
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+
+        margin-right: 0px;
+
+        border-radius: 0;
+        border: none;
+
+        background: transparent;
+        backdrop-filter: blur(40px);
+    }
+
+    #link-container a{
+        height: auto;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin: 1.2em;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    #sidebar-btn:checked ~ ul {
+        display: flex;
+    }
+
+    #sidebar-btn:checked ~ label {
+        display: none;
+    }
+}
+
+@media (max-width: 80px) {
+    .project-container {
+      flex-direction: column !important;
+      text-align: center;
+    }
+  
+    .project img {
+      max-width: 100%;
+    }
+  
+    .project h3 {
+      text-align: center;
+    }
+  }
+   */
+
+
+/* 
+@media (max-width: 800px) {
+    #link-container {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background: rgba(31, 35, 53, 0.95); 
+      backdrop-filter: blur(40px);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 60px;
+      transition: right 0.3s ease-in-out;
+      z-index: 100;
+    }
+  
+    #sidebar-btn:checked ~ #link-container {
+      right: 0;
+    }
+  
+    .btn {
+      display: flex;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 101;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 8px;
+      backdrop-filter: blur(5px);
+      cursor: pointer;
+    }
+  
+    #link-container a {
+      font-size: 1.2rem;
+      margin: 1em 0;
+      color: var(--theme-2);
+    }
+  
+    #sidebar-btn:checked ~ label.btn {
+      display: none;
+    }
+  
+    body:has(#sidebar-btn:checked) {
+      overflow: hidden;
+    }
+  }
+   */
+
+/* 
+@media (max-width: 80px) {
+    #link-container {
+
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        background: var(--background);
+        height: 100vh;
+    
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    #link-container svg {
+        fill: white;
+    }
+
+    #link-container a{
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin: 1.2em;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    #sidebar-btn:checked ~ ul {
+        display: flex;
+    }
+
+    #sidebar-btn:checked ~ label {
+        display: none;
+    }
+} */

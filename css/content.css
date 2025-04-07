@@ -1,0 +1,182 @@
+
+.container {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 3rem 0;
+  height: 90vh;
+}
+
+.container:last-of-type {
+    margin-bottom: 40vh;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--peach);
+  margin-bottom: 2vh;
+  text-align: left;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--sapphire);
+  margin-bottom: 20px;
+}
+
+
+
+#home {
+  font-size: 1.3rem;
+  color: var(--subtext1);
+}
+
+#home h2 {
+  color: #7aa2f7;
+  font-size: 5rem;
+}
+
+.s1 {
+  font-size: 2rem;
+}
+
+
+
+#about {
+  color: var(--subtext1);
+  padding-top: 10rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#about ul {
+  list-style: none;
+}
+
+#about ul li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: var(--green);
+}
+
+
+
+#projects {
+  padding: 2.5rem;
+  color: var(--subtext1);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.project {
+  gap: 2vw;
+  display: flex;
+  align-items: center;
+}
+
+.project:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--theme-2);
+}
+
+.project .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #cdd6f4;
+}
+
+.project-content {
+  margin-bottom: 30px;
+}
+
+.project-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--red);
+  text-align: left;
+}
+
+.project-content p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.project-content a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-content a:hover {
+  color: var(--lavender);
+}
+
+.skills {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.skills svg path {
+  fill: var(--theme-2);
+}
+
+.skills li svg {
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.tech-stack {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #cdd6f4;
+}
+
+.tech-stack span {
+  position: relative;
+  padding: 0 0.6rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-weight: bold;
+  color: var(--teal);
+}
+
+#contact {
+    padding: 20px 20px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+#contact p {
+    padding: 0.4rem;
+}
+
+#contact a {
+    color: var(--sky);
+    text-decoration: none;
+    padding: 0.5rem;
+}
